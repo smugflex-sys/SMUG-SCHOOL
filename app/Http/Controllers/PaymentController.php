@@ -43,6 +43,11 @@ class PaymentController extends Controller
 
         // --- THIS IS THE END OF THE FIX ---
 
+        $secret = config('app.paystack_secret_key');
+        if (!$secret) {
+            return back()->with('error', 'Payments are not configured yet.');
+        }
+
         $data = [
             'email' => $request->email,
             'amount' => $request->amount, // Amount is already in kobo from the form
