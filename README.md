@@ -90,7 +90,7 @@ Node.js & NPM
 
 Installation Steps Clone the repository:
 
-git clone https://github.com/your-username/school-management-system.git cd school-management-system
+git clone https://github.com/smugflex-sys/SMUG-SCHOOL.git cd SMUG-SCHOOL
 
 Install PHP dependencies:
 
